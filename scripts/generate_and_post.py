@@ -133,7 +133,7 @@ def post_to_hatena(character_key: str, article_data: dict) -> bool:
     blog_id = CHARACTERS[character_key]["blog_id"]
 
     # AtomPub API URL
-    url = f"https://blog.hatena.ne.jp/{HATENA_ID}/{blog_id}/atom/entry"
+    url = f"https://blog.hatena.ne.jp/{HATENA_ID}/{blog_id}/atom"
 
     # Atom Entry形式でXMLを構築
     entry = ET.Element("entry")
